@@ -3,7 +3,7 @@
     <div class="card-header">{{user.name}}</div>
     <div *ngIf="user.avatar_url; then thenTemplateUserAvatar else elseTemplateUserAvatar">
     </div>
-    
+
       <ng-template #thenTemplateUserAvatar>
         <img src="{{user.avatar_url}}" width="300px" class="img-fluid" alt="{{user.name}}">
       </ng-template>
@@ -16,7 +16,7 @@
       <h5 class="card-title">{{user.nickName}}</h5>
     </div>
     <div class="card-footer">
-      <a href="{{user.github_url}}" class="btn btn-primary"><i class="fa fa-github"> {{user.nickName}} Github</i></a>
+      <a href="{{user.github_url}}" class="btn btn-primary"><i class="fa fa-github"> {{user.nickName}}</i></a>
     </div>
   </div>
 </div>
