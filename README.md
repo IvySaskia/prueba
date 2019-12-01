@@ -2,6 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
 
+## Comenzando 🚀
+
+### Pre-requisitos 📋
+
+_Instalar Angular 8
+
+## Construido con 🛠️
+
+* Angular 8
+* Bootstrap - Estilos
+
+## Autores ✒️
+
+* **Ivy Saskia Sejas Rocabado** - *Trabajo entero* - [villanuevand](https://github.com/IvySaskia)
+
+## Expresiones de Gratitud 🎁
+
+* Gracias por darme esta oportunidad para postular como pasante 📢
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
