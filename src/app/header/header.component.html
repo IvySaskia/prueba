@@ -1,1 +1,16 @@
-<p>header works!</p>
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <a class="navbar-brand" href="/">My Repository Excercise</a>
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a href="" class="nav-item nav-link">Home</a>
+      <a [routerLink]="['/users']"class="nav-item nav-link" href="#">Repositories</a>
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="https://github.com/IvySaskia" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+  </div>
+</nav>
