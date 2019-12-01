@@ -14,4 +14,5 @@ export class UsersComponent implements OnInit {
   }
 
   users: any = usersList.users;
+  title = 'repositories';
 }
