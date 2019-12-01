@@ -1,1 +1,21 @@
-<p>users works!</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">avatar_url</th>
+        <th scope="col">github_url</th>
+        <th scope="col">name</th>
+        <th scope="col">nickName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">{{user.avatar_url}}</th>
+        <td>{{user.github_url}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.nickName}}</td>
+        <td>
+          <img src="{{user.avatar_url}}" width="30px" class="img-fluid" alt="{{user.name}}">
+        </td>
+      </tr>
+    </tbody>
+  </table>

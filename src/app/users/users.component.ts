@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import usersList from 'src/assets/json/data.json';
 
 @Component({
   selector: 'app-users',
@@ -12,4 +13,5 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
   }
 
+  users: any = usersList.users;
 }
