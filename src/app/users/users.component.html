@@ -1,23 +1,25 @@
-<h1 class="title">{{title}}</h1>
-<div class="card-deck">
-  <div class="card" *ngFor="let user of users">
-    <div class="card-header">{{user.name}}</div>
-    <div *ngIf="user.avatar_url; then thenTemplateUserAvatar else elseTemplateUserAvatar">
-    </div>
+<div class="container-users">
+  <h1 class="title">{{title}}</h1>
+  <div class="card-deck">
+    <div class="card" *ngFor="let user of users">
+      <div class="card-header">{{user.name}}</div>
+      <div *ngIf="user.avatar_url; then thenTemplateUserAvatar else elseTemplateUserAvatar">
+      </div>
 
-      <ng-template #thenTemplateUserAvatar>
-        <img src="{{user.avatar_url}}" width="100%" class="img-fluid" alt="{{user.name}}">
-      </ng-template>
-      
-      <ng-template #elseTemplateUserAvatar>
-        <img src="assets/img/default.png" width="100%" class="img-fluid" alt="{{user.name}}">
-      </ng-template>
+        <ng-template #thenTemplateUserAvatar>
+          <img src="{{user.avatar_url}}" width="100%" class="img-fluid" alt="{{user.name}}">
+        </ng-template>
+        
+        <ng-template #elseTemplateUserAvatar>
+          <img src="assets/img/default.png" width="100%" class="img-fluid" alt="{{user.name}}">
+        </ng-template>
 
-    <div class="card-body">
-      <h5 class="card-title">{{user.nickName}}</h5>
-    </div>
-    <div class="card-footer">
-      <a href="{{user.github_url}}" class="btn btn-primary"><i class="fa fa-github"> {{user.nickName}}</i></a>
+      <div class="card-body">
+        <h5 class="card-title">{{user.nickName}}</h5>
+      </div>
+      <div class="card-footer">
+        <a href="{{user.github_url}}" class="btn btn-primary"><i class="fa fa-github"> {{user.nickName}}</i></a>
+      </div>
     </div>
   </div>
 </div>
